@@ -1,3 +1,10 @@
+body {
+    background-image: url('./logos/cl_background.jpg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Hintergrund bedeckt */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+}
+
 .home-button{
     width: 150px;
     height: 150px;
@@ -17,30 +24,29 @@
     color: #222222;
 }
 
-/* CSS für die Navbar */
-.navbar {
-    background-color: #333; /* Hintergrundfarbe der Navbar */
-    overflow: hidden;
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100hv;
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0));
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Links in der Navbar */
-.navbar a {
-    float: left; /* Links nebeneinander ausrichten */
-    display: block; /* Als Block-Element anzeigen */
-    color: white; /* Textfarbe */
-    text-align: center; /* Text zentrieren */
-    padding: 14px 16px; /* Innenabstand oben und unten 14px, seitlich 16px */
-    text-decoration: none; /* Keine Unterstreichung für Links */
+.navbar-logo-container, .navbar-items-container, .navbar-login-container{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Hover-Effekt für Links in der Navbar */
-.navbar a:hover {
-    background-color: #ddd; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
-    color: black; /* Textfarbe ändern, wenn der Mauszeiger darüber schwebt */
+.navbar-a{
+    color: #ffffff;
+    padding: 10px;
 }
 
-/* Aktiver Link in der Navbar */
-.navbar a.active {
-    background-color: #4CAF50; /* Hintergrundfarbe für den aktiven Link */
-    color: white; /* Textfarbe für den aktiven Link */
+.navbar-a:hover{
+    color: #ff6354;
 }
