@@ -1,0 +1,35 @@
+.home-button{
+    width: 150px;
+    height: 150px;
+    border: none;
+    background: url('./logos/oddspot_full.png') no-repeat center center;
+    background-size: contain;
+}
+
+/* CSS für die Navbar */
+.navbar {
+    background-color: #333; /* Hintergrundfarbe der Navbar */
+    overflow: hidden;
+}
+
+/* Links in der Navbar */
+.navbar a {
+    float: left; /* Links nebeneinander ausrichten */
+    display: block; /* Als Block-Element anzeigen */
+    color: white; /* Textfarbe */
+    text-align: center; /* Text zentrieren */
+    padding: 14px 16px; /* Innenabstand oben und unten 14px, seitlich 16px */
+    text-decoration: none; /* Keine Unterstreichung für Links */
+}
+
+/* Hover-Effekt für Links in der Navbar */
+.navbar a:hover {
+    background-color: #ddd; /* Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+    color: black; /* Textfarbe ändern, wenn der Mauszeiger darüber schwebt */
+}
+
+/* Aktiver Link in der Navbar */
+.navbar a.active {
+    background-color: #4CAF50; /* Hintergrundfarbe für den aktiven Link */
+    color: white; /* Textfarbe für den aktiven Link */
+}

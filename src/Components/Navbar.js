@@ -16,7 +16,6 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
-
 const Navbar = () => {
   
   const [openMenu,setOpenMenu] = useState(false)
@@ -46,17 +45,14 @@ const Navbar = () => {
   
   return <nav>
     <div className='nav-logo-container'>
-      <img src={Logo} alt='oddspot' />
+      <button className='home-button'></button>
     </div>
     <div className='navbar-links-container'>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Testimonials</a>
-      <a href="">Contact</a>
-      <a href="">
-          <BsCart2 className='navbar-cart-icon' />
-      </a>
-      <button className='primary-button'>Bookings Now</button>
+      <a href="">Daily Picks</a>
+      <a href="">Blog</a>
+      <a href="">Pricing</a>
+      <a href=""></a>
+      <button className='primary-button'>Login</button>
     </div>
     <div className='navbar-menu-container'>
       <HiOutlineBars3 onClick={() => setOpenMenu(true) }/>
