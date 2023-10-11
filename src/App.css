@@ -2,8 +2,19 @@
     width: 150px;
     height: 150px;
     border: none;
+    outline: none;
     background: url('./logos/oddspot_full.png') no-repeat center center;
     background-size: contain;
+}
+
+.login-button{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #ff6354;
+    color: #222222;
 }
 
 /* CSS für die Navbar */

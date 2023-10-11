@@ -48,11 +48,11 @@ const Navbar = () => {
       <button className='home-button'></button>
     </div>
     <div className='navbar-links-container'>
-      <a href="">Daily Picks</a>
-      <a href="">Blog</a>
-      <a href="">Pricing</a>
-      <a href=""></a>
-      <button className='primary-button'>Login</button>
+    <a className='navbar-a'><i class="fa-solid fa-book"></i> Blog </a>
+      <a className='navbar-a'><i class="fa-regular fa-calendar-check"></i> Daily Picks </a>
+      <a className='navbar-a'><i class="fa-solid fa-chart-column"></i> Statistics </a>
+      <a className='navbar-a'><i class="fa-solid fa-tag"></i> Pricing </a>
+      <button className='login-button'><i class="fa-solid fa-user-tie"></i> Login </button>
     </div>
     <div className='navbar-menu-container'>
       <HiOutlineBars3 onClick={() => setOpenMenu(true) }/>
