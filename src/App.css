@@ -10,7 +10,7 @@ body {
     height: 150px;
     border: none;
     outline: none;
-    background: url('./logos/oddspot_full.png') no-repeat center center;
+    background: url('./logos/Oddspot_full_noBG.png') no-repeat center center;
     background-size: contain;
 }
 
@@ -23,7 +23,7 @@ body {
     background-color: #ff6354;
     color: #222222;
 }
-
+/*
 .navbar-container{
     display: flex;
     justify-content: space-between;
@@ -32,16 +32,23 @@ body {
     background: linear-gradient(to top, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0));
     margin: 0;
     font-family: Arial, sans-serif;
-}
+}*/
 
 .navbar-logo-container, .navbar-items-container, .navbar-login-container{
-    width: 30%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.navbar-logo-container .navbar-login-container{
+    width: 20%;
+}
+
+.navbar-items-container{
+    width: 70%;
+}
+/*
 .navbar-a{
     color: #ffffff;
     padding: 10px;
@@ -49,4 +56,65 @@ body {
 
 .navbar-a:hover{
     color: #ff6354;
+}
+*/
+
+/* Globale Stile für die Navbar */
+.navbar-container{
+    background-color: #ffffff;
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+}
+
+/* Stile für die Navbar-Links */
+.navbar-a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover-Effekt für Navbar-Links */
+.navbar-a:hover {
+    color: #ff6354;
+}
+
+/* Stile für das Logo 
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+}*/
+
+/* Stile für die aktive Seite */
+.navbar-container .active {
+    color: #ff6354;
+}
+
+/* Stile für den Menü-Button (wenn die Navbar für Mobilgeräte angezeigt wird) */
+.menu-button {
+    display: none; /* In Desktop-Ansicht verstecken */
+}
+
+/* Media Query für Mobilgeräte */
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
