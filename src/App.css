@@ -11,3 +11,14 @@ body {
     background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
     font-family: 'Kanit';
 }
+
+.site-container{
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
+    backdrop-filter: blur(1px);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
