@@ -57,7 +57,8 @@ const Navbar = () => {
       <a className='navbar-item'>pricing <i class="fa-solid fa-tag"></i></a>
     </div>
     <div className='navbar-login-container'>
-    <button className='login-button'><i class="fa-solid fa-user-tie"></i> Login </button>
+    <button className='navbar-button sign-up-button'> Sign up </button>
+    <button className='navbar-button login-button'> Login </button>
     </div>
   </nav>;
 

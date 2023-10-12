@@ -22,20 +22,38 @@ body {
     background-size: contain;
 }
 
-.login-button{
+.navbar-button{
     font-size: 1rem;
     border: none;
     outline: none;
     padding: 10px 12px;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--oddspot-red);
+}
+
+.navbar-button:hover{
+    background-color: var(--oddspot-white);
+    color: var(--oddspot-black);
+}
+
+.login-button{
     background-color: var(--oddspot-red);
     color: var(--oddspot-black);
+
+}
+
+.sign-up-button{
+    background-color: var(--oddspot-black);
+    color: var(--oddspot-white);
 }
 
 /* global style navbar */
 .navbar-container{
     /*background-color: #ffffff;*/
     background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
+    backdrop-filter: blur(3px);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
