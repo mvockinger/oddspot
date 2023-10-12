@@ -3,6 +3,7 @@ body {
     background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Hintergrund bedeckt */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    font-family: 'Kanit';
 }
 
 .home-button{
@@ -63,12 +64,13 @@ body {
 .navbar-container{
     background-color: #ffffff;
     background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
-    border-bottom: 1px solid #e1e1e1;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    /*border-bottom: 1px solid #e1e1e1;*/
 }
 
 /* Stile für die Navbar-Links */
