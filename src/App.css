@@ -1,5 +1,5 @@
 body {
-    background-image: url('./logos/cl_background.jpg'); /* Pfad zum Hintergrundbild */
+    background-image: url('./logos/cl_background.png'); /* Pfad zum Hintergrundbild */
     background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Hintergrund bedeckt */
     background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
     background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
@@ -11,7 +11,7 @@ body {
     height: 150px;
     border: none;
     outline: none;
-    background: url('./logos/Oddspot_full_noBG.png') no-repeat center center;
+    background: url('./logos/oddspot_full_noBG.png') no-repeat center center;
     background-size: contain;
 }
 
@@ -24,16 +24,19 @@ body {
     background-color: #ff6354;
     color: #222222;
 }
-/*
+
+/* global style navbar */
 .navbar-container{
+    /*background-color: #ffffff;*/
+    background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100hv;
-    background: linear-gradient(to top, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0));
-    margin: 0;
-    font-family: Arial, sans-serif;
-}*/
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    /*border-bottom: 1px solid #e1e1e1;*/
+}
 
 .navbar-logo-container, .navbar-items-container, .navbar-login-container{
     height: 100px;
@@ -47,34 +50,11 @@ body {
 }
 
 .navbar-items-container{
-    width: 70%;
-}
-/*
-.navbar-a{
-    color: #ffffff;
-    padding: 10px;
+    width: 60%;
 }
 
-.navbar-a:hover{
-    color: #ff6354;
-}
-*/
-
-/* Globale Stile für die Navbar */
-.navbar-container{
-    background-color: #ffffff;
-    background: linear-gradient(to top, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.2));
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    /*border-bottom: 1px solid #e1e1e1;*/
-}
-
-/* Stile für die Navbar-Links */
-.navbar-a {
+/* navbar-link style*/
+.navbar-item {
     text-decoration: none;
     color: #ffffff;
     margin: 0 15px;
@@ -82,19 +62,12 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Hover-Effekt für Navbar-Links */
-.navbar-a:hover {
+/* navbar-link hover-effect */
+.navbar-item:hover {
     color: #ff6354;
 }
 
-/* Stile für das Logo 
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #007bff;
-}*/
-
-/* Stile für die aktive Seite */
+/* active site style */
 .navbar-container .active {
     color: #ff6354;
 }
@@ -120,3 +93,43 @@ body {
         cursor: pointer;
     }
 }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #222222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff6354;
+    border-radius: 10px;
+  }
+  
