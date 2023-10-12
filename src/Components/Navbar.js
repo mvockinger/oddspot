@@ -33,7 +33,7 @@ const Navbar = () => {
     </div>
     <div className='navbar-items-container'>
       <a className='navbar-item'>upcoming events <i class="fa-regular fa-calendar"></i></a>
-      <a className='navbar-item'>free picks <i class="fa-regular fa-calendar-check"></i></a>
+      <a className='navbar-item'>free picks <i class="fa-regular fa-circle-check"></i></a>
       <a className='navbar-item'>predictions <i class="fa-solid fa-bullseye"></i></a>
       <a className='navbar-item'>statistics <i class="fa-solid fa-chart-column"></i></a>
       <a className='navbar-item'>community <i class="fa-solid fa-users"></i></a>
