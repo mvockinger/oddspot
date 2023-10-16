@@ -1,7 +1,8 @@
 :root {
     --oddspot-black: #222222;
-    --oddspot-red: #ff6354;
+    --oddspot-grey: #909090;
     --oddspot-white: #ffffff;
+    --oddspot-red: #ff6354;
 }
 
 .home-button{
@@ -32,7 +33,6 @@
 .login-button{
     background-color: var(--oddspot-red);
     color: var(--oddspot-black);
-
 }
 
 .sign-up-button{

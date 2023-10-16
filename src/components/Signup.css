@@ -1,0 +1,80 @@
+:root {
+    --oddspot-black: #222222;
+    --oddspot-grey: #909090;
+    --oddspot-white: #ffffff;
+    --oddspot-red: #ff6354;
+}
+
+.signup-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.2));
+    backdrop-filter: blur(3px);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    width: 40%;
+}
+
+.signup-headtext{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.signup-element{
+    width: 80%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.signup-label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-input{
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.signup-text{
+    
+}
+
+.login-link{
+    color: var(--oddspot-red);
+    text-decoration: none;
+}
+
+.login-link:hover{
+    color: var(--oddspot-white);
+    text-decoration: underline;
+}
+
+.signup-button{
+    background-color: var(--oddspot-black);
+    color: var(--oddspot-white);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--oddspot-red);
+}
+
+.signup-button:hover{
+    background-color: var(--oddspot-white);
+    color: var(--oddspot-black);
+}
