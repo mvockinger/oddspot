@@ -45,6 +45,7 @@
     width: 200px;
     padding: 8px;
     font-size: 14px;
+    border-radius: 5px;
 }
 
 .signup-text{
@@ -62,8 +63,8 @@
 }
 
 .signup-button{
-    background-color: var(--oddspot-black);
-    color: var(--oddspot-white);
+    background-color: var(--oddspot-red);
+    color: var(--oddspot-black);
     font-size: 1rem;
     border: none;
     outline: none;

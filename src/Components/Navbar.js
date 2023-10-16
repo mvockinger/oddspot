@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import Signup from './Signup';
 
 const Navbar = () => {
   const [isDropdownVisibleSport, setDropdownVisibleSport] = useState(false);
