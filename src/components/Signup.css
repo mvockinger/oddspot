@@ -26,23 +26,23 @@
 .signup-headtext{
     font-size: 18px;
     margin-bottom: 20px;
+    color: var(--oddspot-white);
 }
 
 .signup-element{
-    width: 80%;
-    text-align: left;
-    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 5% 50%;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .signup-label{
-    display: block;
-    margin-bottom: 5px;
+    grid-column: 1 / 2;
 }
 
 .signup-input{
-    display: flex;
-    justify-content: flex-end;
-    width: 200px;
+    grid-column: 3 / 4;
     padding: 8px;
     font-size: 14px;
     border-radius: 5px;

@@ -71,6 +71,19 @@ const SignUp = () => {
                 />
                 </label>
             </div>
+
+            <div className="signup-element">
+                <label className="signup-label">
+                    repeat Password
+                <input
+                    className="signup-input"
+                    placeholder="enter a password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                </label>
+            </div>
         </div>
 
         <form onSubmit={handleSubmit}>
